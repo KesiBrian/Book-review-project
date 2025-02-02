@@ -1,0 +1,35 @@
+/* src/components/Login.css or Register.css */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  input:focus {
+    border-color: #2e8b57; /* Deep green focus border */
+  }
+
+  button {
+    width: 100%;
+    background-color: #3cb371; /* Medium Green */
+    color: black;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #2e8b57; /* Darker green hover */
+  }

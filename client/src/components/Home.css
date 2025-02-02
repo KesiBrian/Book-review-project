@@ -1,0 +1,17 @@
+/* src/pages/Home.css */
+h1 {
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  p {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 20px;
+    text-align: center;
+  }
