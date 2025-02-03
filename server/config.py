@@ -14,6 +14,7 @@ from sqlalchemy import MetaData
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SECRET_KEY'] = 'mysecretkey'  # For session management
 app.json.compact = False
 
 # Define metadata, instantiate db
@@ -28,4 +29,10 @@ db.init_app(app)
 api = Api(app)
 
 # Instantiate CORS
+# Initialize database, migrations, and CORS
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 CORS(app)
+
+# Import the app to complete setup
+from server import app
